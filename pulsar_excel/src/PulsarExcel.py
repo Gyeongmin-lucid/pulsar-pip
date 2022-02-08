@@ -3,7 +3,7 @@ import csv
 
 import pandas as pd
 
-class Csv() :
+class CSV() :
     def __init__(self) :
         return
 
@@ -41,7 +41,7 @@ class Csv() :
         data = dict(zip(res[0],row(*res[1:])))    
         return data
 
-class Xlsx() :
+class XLSX() :
     def __init__(self) :
         return
         
@@ -49,3 +49,7 @@ class Xlsx() :
     def read_excel(excel_file, sheet_name) :
         return pd.read_excel(excel_file, sheet_name=sheet_name)
 
+
+def test_package() :
+    print("This is test package")
+    return
